@@ -31,8 +31,18 @@
                 <input type="text" id="buscador" placeholder="A donde Quieres Ir?">
             </div>
             <h3 class="tituloResultado" style="color: whitesmoke">Resultados:</h3>
-            <div class="provincia">
-                <img src="/img/Resultado1.png" alt="Resultado1">
+            <div class="card">
+                <img class="heart-icon" onclick="like(this)" src = "./img/heart-icon.svg" alt="heart-icon"/>
+                <p class="card-title">Los favoritos de los viajeros</p> 
+                <img class="card-image" src="./img/perezoso_1.jpg" alt="Resultado1">
+                <p class="card-description">Tour guiado por la naturaleza, la mejor experiencia en parques nacionales</p>
+            </div>
+            <div class="card">
+                <img class="heart-icon" onclick="like(this)" src = "./img/heart-icon.svg" alt="heart-icon"/>
+                <p class="card-title">Los favoritos de los viajeros</p> 
+                <img class="card-image" src="./img/perezoso_1.jpg" alt="Resultado1">
+                <p class="card-description">Tour guiado por la naturaleza, la mejor experiencia en parques nacionales</p>
+            </div>
         </section>
 
 
@@ -41,6 +51,14 @@
     <footer>
         <p class="barraAbajo">Colegio Universitario de Cartago 2023</p>
     </footer>
+    <script>
+        function like(element){
+            console.log("asd00");
+            console.log(element.classList);
+            element.classList.toggle("heart-icon-selected");
+        }
+
+    </script>
 </body>
 
 </html>
