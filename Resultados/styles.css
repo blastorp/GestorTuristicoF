@@ -74,8 +74,8 @@ nav {
 .provincia {
     display: flex;
 }
-
-select {
+/* esta pagina no tiene select */
+/* select {
     display: flex;
 }
 
@@ -88,14 +88,14 @@ option:first-child {
     order: 4;
     -webkit-order: -5;
     color: blue;
-}
+} */
 
 main .busquedaInicial {
     flex-grow: 1;
     width: 100%;
     height: 100%;
     background-color: #fb8500;
-    background-image: url(/../img/volcan-arenal.jpg);
+    background-image: url(/Resultados/img/volcan-arenal.jpg);
     background-size:contain;
     background-position: center;
     display: flex;
@@ -131,11 +131,11 @@ main {
     
 }
 
-label {
+#tituloBuscador {
     display: none;
 }
-
-input, select, button {
+/* estilos no utilizados */
+/* input, select, button {
     width: 16rem;
     height: 3rem;
     border-radius: 1.5rem;
@@ -146,6 +146,115 @@ input, select, button {
 
 button {
     background-color: #2A9D8F;
+} */
+
+
+
+header, footer {
+    position: sticky;
+    text-align: center;
+    background-color: #2A9D8F;
+}
+
+footer {
+    bottom: 0;
+    border-top: 2px solid #264653;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.inputCheck {
+        
+    max-width: 20px;
+}
+
+#provCheck {
+    display: none;
+}
+
+.filtrosContainer {
+    background-color: hsla(43, 76%, 60%, 0.712);
+    border-radius: 6px;
+} 
+.filtros{
+    width: 90%;
+}
+.filtros li {
+    list-style-type: none;
+    width: 100%;
+    
+    background-color: #e9c56a70;
+ 
+
+}
+
+.filtros li:first-child {
+    
+ border-radius: 5px 5px 0 0 ;
+
+}
+
+.filtros li:last-child {
+    
+    border-radius:  0 0 5px 5px ;
+   
+   }
+
+.lblTitulo  {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:5px;
+    margin-bottom: 10px;
+    color: whitesmoke;
+    font-size: large;
+    font-weight: bold;
+}
+.icon {
+    transform: rotate(90deg);
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    color: whitesmoke;
+   
+    
+}
+
+.lblTitulo + input[type="checkbox"] {
+    display: none;
+    
+}
+
+.filtrosContainer {
+    width: 100%;
+    line-height: 30px;
+    max-height: 0;
+    transition: max-height 0.5s;
+    overflow: hidden;
+    display: flex;
+    
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.lblTitulo + input[type="checkbox"]:checked + .filtrosContainer {
+    max-height: 500px;
+}
+
+
+
+.inputCheck {
+    width: 100%;
+    
+
+}
+
+.opcionIndvidual {
+ width: 100%;
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ color: #264653;
 }
 
 .card {
@@ -180,20 +289,7 @@ button {
 }
 
 
-header, footer {
-    position: sticky;
-    text-align: center;
-    background-color: #2A9D8F;
-}
-
-footer {
-    bottom: 0;
-    border-top: 2px solid #264653;
-    padding: 10px;
-    font-weight: bold;
-}
-
-
+/* ---------------------------------------------------------------------------------------------------- */
 @media screen and (min-width: 786px){
     body {
         font-family: 'Nunito', sans-serif;
@@ -331,4 +427,8 @@ footer {
     label {
         display: flex;
     }
+
+    
+
+  
 } 
