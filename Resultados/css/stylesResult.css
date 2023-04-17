@@ -54,7 +54,11 @@ nav {
     color: #ffbe0b;
  
 }
-
+.contenedor__dinamico {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .contenedorImg {
     width: 90vw;
     min-height: 350px;

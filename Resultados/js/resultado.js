@@ -1,14 +1,3 @@
-// main.js es usado por el index.html
-// todo
-// .optimizar codigo, crear la funcion de agregar al array if checked
-// .optimizar funcion de imprimir cada tarjeta poniendola aparte
-// .acomodar enlaces
-// .
-// .
-// .
-// .
-// .
-
 function like(element) {
   console.log("asd00");
   console.log(element.classList);
@@ -36,7 +25,7 @@ const results = [
   {
     id: 2,
     titulo: "Restaurante Tamara",
-    provincia: "Limon",
+    provincia: "Restaurante Tamara",
     clima: "calido",
     topografia: "playa",
     categoria: "restaurante",
@@ -137,7 +126,7 @@ const results = [
   {
     id: 8,
     titulo: "Volcán Arenal",
-    provincia: "alajuela",
+    provincia: " Alajuela",
     clima: "Calido",
     topografia: "Montaña",
     categoria: "Aire Libre",
@@ -154,7 +143,7 @@ const results = [
   {
     id: 9,
     titulo: "Monteverde Cloud Forest Reserve",
-    provincia: "alajuela",
+    provincia: " Alajuela",
     clima: "Fresco",
     topografia: "Montaña",
     categoria: "Aire Libre",
@@ -180,251 +169,56 @@ const results = [
     pagoAceptado: "efectivo, Tarjeta Debito",
     direccion: "Golfo de Nicoya",
     horario: "De lunes a sabado, de 7:30 a.m. a 4:00 p.m",
-    contacto: "5068708 3012",
+    contacto: "+50687083012",
     link: "https://www.vamosaturistear.com/",
     img: "./img/id10.jpg",
   },
 ];
 //  <img class="heart-icon" onclick="like(this)" src = "${heart}]" alt="heart-icon"/>
 //  <img class="card-image" src="${img}]" alt="Resultado1">
-const initApp = () => {
-  const divCards = document.querySelector(".resultados__container");
-
-  let filterProv = [];
-  let filterTipo = [];
-  let filterClima = [];
-  let filterTopografia = [];
-
-  const imprimirTarjeta = (result) => {
-    return `<div class="card">
-    <img class="card-image" src="${result.img}" alt="CasaAquiares">
-    <p class="card-title">${result.titulo}</p> 
-    <p class="card-description">${result.descripcion}</p>
-    <div class="card__button__container">
-    <img class="heart-icon" onclick="like(this)" src = "./img/heart-icon.svg" alt="heart-icon"/>
-    <a class="card__link" href="./resultadoDinamico.html"><button class="card__button" value="${result.id}">Ver Lugar</button></a> 
-    </div>
-    </div>`;
-  };
-
-  const textoPlano = (string) => {
-    let stringProcesado = string.toLowerCase();
-    return stringProcesado.replace(/\s+/g, "");
-  };
-  const arrayPlano = (arreglo) => {
-    for (let i = 0; i < arreglo.length; i++) {
-      arreglo[i] = textoPlano(arreglo[i].toLowerCase());
-    }
-  };
-
-  const llenadoAutProv = (arreglo) => {
-    const arregloLoco = [];
-    if (arreglo.length === 0) {
-      results.forEach((result) => {
-        if (!arregloLoco.includes(result.provincia)) {
-          arregloLoco.push(result.provincia);
-        }
-      });
-      console.log(arregloLoco);
-      return arregloLoco;
-    } else {
-      return arreglo;
-    }
-  };
-  const llenadoAutTipo = (arreglo) => {
-    const arregloLoco = [];
-    if (arreglo.length === 0) {
-      results.forEach((result) => {
-        if (!arregloLoco.includes(result.categoria)) {
-          arregloLoco.push(result.categoria);
-        }
-      });
-      console.log(arregloLoco);
-      return arregloLoco;
-    } else {
-      return arreglo;
-    }
-  };
-  const llenadoAutClima = (arreglo) => {
-    const arregloLoco = [];
-    if (arreglo.length === 0) {
-      results.forEach((result) => {
-        if (!arregloLoco.includes(result.clima)) {
-          arregloLoco.push(result.clima);
-        }
-      });
-      console.log(arregloLoco);
-      return arregloLoco;
-    } else {
-      return arreglo;
-    }
-  };
-  const llenadoAutTopografia = (arreglo) => {
-    const arregloLoco = [];
-    if (arreglo.length === 0) {
-      results.forEach((result) => {
-        if (!arregloLoco.includes(result.topografia)) {
-          arregloLoco.push(result.topografia);
-        }
-      });
-      console.log(arregloLoco);
-      return arregloLoco;
-    } else {
-      return arreglo;
-    }
-  };
-
-  const filtrarArrays = (results) => {
-    divCards.innerHTML = "";
-    results.map((result) => {
-      result.descripcion = result.descripcion.slice(0, 99) + "...";
-      //normalizando el texto para los if y llenado en caso de estar vacios
-      const atributoProvincia = textoPlano(result.provincia);
-      const atributoTipo = textoPlano(result.categoria);
-      const atributoClima = textoPlano(result.clima);
-      const atributoTopografia = textoPlano(result.topografia);
-
-      console.log(atributoProvincia);
-      //   console.log(atributoTipo);
-      //   console.log(atributoClima);
-      //   console.log(atributoTopografia);
-
-      let auxfilterProv = filterProv;
-      let auxfilterTipo = filterTipo;
-      let auxfilterClima = filterClima;
-      let auxfilterTopografia = filterTopografia;
-
-      auxfilterProv = llenadoAutProv(auxfilterProv);
-      auxfilterTipo = llenadoAutTipo(auxfilterTipo);
-      auxfilterClima = llenadoAutClima(auxfilterClima);
-      auxfilterTopografia = llenadoAutTopografia(auxfilterTopografia);
-
-      arrayPlano(auxfilterProv);
-      arrayPlano(auxfilterTipo);
-      arrayPlano(auxfilterClima);
-      arrayPlano(auxfilterTopografia);
-      console.log(auxfilterProv);
-
-      //borrar
-      //   console.log(auxfilterProv);
-      //   console.log(auxfilterTipo);
-      //   console.log(auxfilterClima);
-      //   console.log(auxfilterTopografia);
-
-      if (auxfilterProv.includes(atributoProvincia)) {
-        console.log("nivel1");
-        if (auxfilterTipo.includes(atributoTipo)) {
-          console.log("nivel2");
-          if (auxfilterClima.includes(atributoClima)) {
-            console.log("nivel3");
-            if (auxfilterTopografia.includes(atributoTopografia)) {
-              console.log("nivel4");
-              const template = imprimirTarjeta(result);
-              divCards.innerHTML += template;
-            }
-          }
-        }
-      }
-
-      //   const template = imprimirTarjeta(result);
-      //   divCards.innerHTML += template;
-      //   auxfilterProv = filterProv;
-      //   auxfilterTipo = filterTipo;
-      //   auxfilterClima = filterClima;
-      //   auxfilterTopografia = filterTopografia;
-    });
-  };
-
-  //imprime al iniciar la pagina
-  results.map((result) => {
-    result.descripcion = result.descripcion.slice(0, 99) + "...";
-    const template = imprimirTarjeta(result);
-    divCards.innerHTML += template;
-  });
-
-  const verButtons = document.querySelectorAll(".card__button");
-  verButtons.forEach((button) => {
-    button.addEventListener("click", (event) => {
-      const valueButton = event.target.value;
-      sessionStorage.setItem("id", valueButton);
-      console.log(sessionStorage.getItem("id"));
-      window.open("./resultadoDinamico.html");
-    });
-  });
-
-  const checkProvBotones = document.querySelectorAll(".checkProvincia");
-  checkProvBotones.forEach((check) => {
-    check.addEventListener("change", (event) => {
-      if (event.target.checked) {
-        filterProv.push(event.target.value);
-        console.log(filterProv);
-      } else {
-        let pos = filterProv.indexOf(event.target.value);
-        filterProv.splice(pos, 1);
-        console.log(filterProv);
-      }
-      filtrarArrays(results);
-    });
-  });
-  const checkTipoBotones = document.querySelectorAll(".checkTipo");
-  checkTipoBotones.forEach((check) => {
-    check.addEventListener("change", (event) => {
-      if (event.target.checked) {
-        filterTipo.push(event.target.value);
-        console.log(filterTipo);
-      } else {
-        let pos = filterTipo.indexOf(event.target.value);
-        filterTipo.splice(pos, 1);
-        console.log(filterTipo);
-      }
-      filtrarArrays(results);
-    });
-  });
-  const checkClimaBotones = document.querySelectorAll(".checkClima");
-  checkClimaBotones.forEach((check) => {
-    check.addEventListener("change", (event) => {
-      if (event.target.checked) {
-        filterClima.push(event.target.value);
-        console.log(filterClima);
-      } else {
-        let pos = filterClima.indexOf(event.target.value);
-        filterClima.splice(pos, 1);
-        console.log(filterClima);
-      }
-      filtrarArrays(results);
-    });
-  });
-  const checkTipografiaBotones = document.querySelectorAll(".checkTopografia");
-  checkTipografiaBotones.forEach((check) => {
-    check.addEventListener("change", (event) => {
-      if (event.target.checked) {
-        filterTopografia.push(event.target.value);
-        console.log(filterTopografia);
-      } else {
-        let pos = filterTopografia.indexOf(event.target.value);
-        filterTopografia.splice(pos, 1);
-        console.log(filterTopografia);
-      }
-      filtrarArrays(results);
-    });
-  });
-};
-document.addEventListener("DOMContentLoaded", initApp);
-
-const prueba = ["DSDKFJ", "ASLDKJF", "Aasdfhm", "jkhdflASDF"];
-const arrayPlano = (arreglo) => {
-  for (let i = 0; i < arreglo.length; i++) {
-    arreglo[i] = arreglo[i].toLowerCase();
+const divCards = document.querySelector(".contenedor__dinamico");
+const idMostrar = parseInt(sessionStorage.getItem("id")) ;
+results.map((result) => {
+  if (idMostrar === result.id) {
+    const template = `<section class="contenedorImg">
+              <figure class="figure">
+                  <img src="${result.img}" alt="imagen Turistica">
+                
+              </figure>
+              <h2 class="contenedorImg__h2">${result.titulo}</h2>
+              <div class="contenedorImg__categorias">
+                  <ul >
+                      <li>provincia: <span class="bold">${result.provincia}</span></li>
+                      <li>categoria: <span class="bold">${result.categoria}</span></li>
+                      <li>clima: <span class="bold">${result.clima}</li>
+                      <li>zona: <span class="bold">${result.topografia}</li>
+                  </ul>
+              </div>
+          </section>
+      
+          <section class="contenedorDes">
+              <h3 class="contenedorDes__h3">Descripcion:</h3>
+              <p>
+              ${result.descripcion}
+              </p>
+          </section>
+          <section class="contenedorInfo">
+              <p>
+                  <span class="bold">Direccion: </span> ${result.direccion}
+              </p>
+              <p>
+                  <span class="bold">Pago Aceptado: </span>${result.pagoAceptado}
+              </p>
+              <p>
+                  <span class="bold">Horario: </span>${result.horario}
+              </p>
+              <p>
+                  <span class="bold">Contacto: </span> <a href="tel:${result.contacto}">${result.contacto}</a>
+              </p>
+              <p>
+                  <a href="${result.link}">Visita su sitio Web</a>
+              </p>
+          </section>`;
+    divCards.innerHTML = template;
   }
-};
-
-arrayPlano(prueba);
-const llenadoAutProv = (arreglo) => {
-  if (!arreglo.length) {
-    console.log("esta vacio");
-  } else {
-    console.log("no esta vacio");
-  }
-};
-llenadoAutProv(prueba);
-console.log(prueba);
+});

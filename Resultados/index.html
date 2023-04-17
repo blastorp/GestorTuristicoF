@@ -47,39 +47,80 @@ crear diferentes secciones para la busqueda, los filtros y los resultados con di
                         <input type="checkbox" name="accordion" id="filtroProvCheck">
                         <div class="filtrosContainer">
                             <div class="opcionIndvidual">
-                                <label for="opcion1" class="provincias"> San Jose</label>
-                                <input class="inputCheck" type="checkbox" name="checkboxProv" id="opcion1">                                
+                                <label for="opcion1" class="provincias">San Jose</label>
+                                <input class="inputCheck checkProvincia" type="checkbox" name="checkboxProv" id="opcion1" value="San Jose">                                
                             </div>
                             
                             <div class="opcionIndvidual">
                                 <label for="opcion2" class="provincias">Alajuela</label>
-                                <input class="inputCheck" type="checkbox" name="checkboxProv" id="opcion2">
+                                <input class="inputCheck checkProvincia" type="checkbox" name="checkboxProv" id="opcion2" value="Alajuela">
                             </div>
                                 
                             <div class="opcionIndvidual">
                                 <label for="opcion3" class="provincias">Cartago</label>
-                                <input class="inputCheck" type="checkbox" name="checkboxProv" id="opcion3">
+                                <input class="inputCheck checkProvincia" type="checkbox" name="checkboxProv" id="opcion3" value="Cartago">
                             </div>
                                 
                             <div class="opcionIndvidual">
                                 <label for="opcion4" class="provincias">Heredia</label>
-                                <input class="inputCheck" type="checkbox" name="checkboxProv" id="opcion4">
+                                <input class="inputCheck checkProvincia" type="checkbox" name="checkboxProv" id="opcion4" value="Heredia">
                             </div>
                                 
                             <div class="opcionIndvidual">
                                 <label for="opcion5" class="provincias">Guanacaste</label>
-                                <input class="inputCheck" type="checkbox" name="checkboxProv" id="opcion5">
+                                <input class="inputCheck checkProvincia" type="checkbox" name="checkboxProv" id="opcion5" value="Guanacaste">
                             </div>
                                 
                             <div class="opcionIndvidual">
                                 <label for="opcion6" class="provincias">Puntarenas</label>
-                                <input class="inputCheck" type="checkbox" name="checkboxProv" id="opcion6">
+                                <input class="inputCheck checkProvincia" type="checkbox" name="checkboxProv" id="opcion6" value="Puntarenas">
                             </div>
                                 
                             <div class="opcionIndvidual">
                                 <label for="opcion7" class="provincias">Limon</label>
-                                <input class="inputCheck" type="checkbox" name="checkboxProv" id="opcion7">
+                                <input class="inputCheck checkProvincia" type="checkbox" name="checkboxProv" id="opcion7" value="Limon">
                             </div> 
+                        </div>
+                        
+                    </li>
+                    <li>
+                        <label for="filtroTipo" class="lblTitulo">Tipo<span class="icon">&#x3e</span></label>
+                        <input type="checkbox" name="accordion" id="filtroTipo" class="filtroAccordion">
+                        <div class="filtrosContainer">
+                                <div class="opcionIndvidual">
+                                <label for="opcion1" class="tipo">Hotel</label>
+                                <input class="inputCheck checkTipo" type="checkbox" name="checkboxTipo" id="opcion1" value="Hotel">
+                            </div>
+                                        
+                            <div class="opcionIndvidual">
+                                <label for="opcion2" class="tipo">Restaurante</label>
+                                <input class="inputCheck checkTipo" type="checkbox" name="checkboxTipo" id="opcion2" value="Restaurante">
+                            </div>
+                                        
+                            <div class="opcionIndvidual">
+                                <label for="opcion3" class="tipo">Aire Libre</label>
+                                <input class="inputCheck checkTipo" type="checkbox" name="checkboxTipo" id="opcion3" value="AireLibre">
+                            </div>
+                                        
+                            <div class="opcionIndvidual">
+                                <label for="opcion4" class="tipo">Tours</label>
+                                <input class="inputCheck checkTipo" type="checkbox" name="checkboxTipo" id="opcion4" value="Tours">
+                            </div>
+                                        
+                            <div class="opcionIndvidual">
+                                <label for="opcion5" class="tipo">Todo Incluido</label>
+                                <input class="inputCheck checkTipo" type="checkbox" name="checkboxTipo" id="opcion5" value="TodoIncluido">
+                            </div>
+                                        
+                            <div class="opcionIndvidual">
+                                <label for="opcion6" class="tipo">Acceso Gratuito</label>
+                                <input class="inputCheck checkTipo" type="checkbox" name="checkboxTipo" id="opcion6" value="AccesoGratuito">
+                            </div>
+                                        
+                            <div class="opcionIndvidual">
+                                <label for="opcion7" class="tipo">Puntos Destacados</label>
+                                <input class="inputCheck checkTipo" type="checkbox" name="checkboxTipo" id="opcion7" value="PuntosDestacados">
+                            </div>
                         </div>
       
                     </li>
@@ -89,85 +130,44 @@ crear diferentes secciones para la busqueda, los filtros y los resultados con di
                         <div class="filtrosContainer">
                             <div class="opcionIndvidual">
                                 <label for="opcion1" class="Temps">Fresco</label>
-                                <input class="inputCheck" type="checkbox" name="checkboxTemp" id="opcion1">
+                                <input class="inputCheck checkClima" type="checkbox" name="checkboxTemp" id="opcion1" value="Fresco">
                             </div>
                                     
                             <div class="opcionIndvidual">
                                 <label for="opcion2" class="Temps">Calido</label>
-                                <input class="inputCheck" type="checkbox" name="checkboxTemp" id="opcion2">
+                                <input class="inputCheck checkClima" type="checkbox" name="checkboxTemp" id="opcion2" value="Calido">
                             </div>
                         </div>
       
                     </li>
                     <li>
-                        <label for="filtroTopografia" class="lblTitulo">Topografia<span class="icon">&#x3e</span></label>
+                        <label for="filtroTopografia" class="lblTitulo">Zona<span class="icon">&#x3e</span></label>
                         <input type="checkbox" name="accordion" id="filtroTopografia">
                         <div class="filtrosContainer">
                             <div class="opcionIndvidual">
                                 <label for="opcion1" class="Temps">Playa</label>
-                                <input class="inputCheck" type="checkbox" name="checkboxTopo" id="opcion1">
+                                <input class="inputCheck checkTopografia" type="checkbox" name="checkboxTopo" id="opcion1" value="Playa">
                             </div>
                                     
                             <div class="opcionIndvidual">
                                 <label for="opcion3" class="Temps">Ciudad</label>
-                                <input class="inputCheck" type="checkbox" name="checkboxTopo" id="opcion3">
+                                <input class="inputCheck checkTopografia" type="checkbox" name="checkboxTopo" id="opcion3" value="Ciudad">
                             </div>
                                     
                             <div class="opcionIndvidual">
                                 <label for="opcion3" class="Temps">Montaña</label>
-                                <input class="inputCheck" type="checkbox" name="checkboxTopo" id="opcion3">
+                                <input class="inputCheck checkTopografia" type="checkbox" name="checkboxTopo" id="opcion3" value="Montaña">
                             </div>
                                     
                             <div class="opcionIndvidual">
                                 <label for="opcion4" class="Temps">Area Rural</label>
-                                <input class="inputCheck" type="checkbox" name="checkboxTopo" id="opcion4">
+                                <input class="inputCheck checkTopografia" type="checkbox" name="checkboxTopo" id="opcion4" value="AreaRural">
 
                             </div>
                         </div>
       
                     </li>
 
-                    <li>
-                        <label for="filtroTipo" class="lblTitulo">Tipo<span class="icon">&#x3e</span></label>
-                        <input type="checkbox" name="accordion" id="filtroTipo" class="filtroAccordion">
-                        <div class="filtrosContainer">
-                                <div class="opcionIndvidual">
-                                <label for="opcion1" class="tipo">Hotel</label>
-                                <input class="inputCheck" type="checkbox" name="checkboxTipo" id="opcion1">
-                            </div>
-                                        
-                            <div class="opcionIndvidual">
-                                <label for="opcion2" class="tipo">Restaurante</label>
-                                <input class="inputCheck" type="checkbox" name="checkboxTipo" id="opcion2">
-                            </div>
-                                        
-                            <div class="opcionIndvidual">
-                                <label for="opcion3" class="tipo">Aire Libre</label>
-                                <input class="inputCheck" type="checkbox" name="checkboxTipo" id="opcion3">
-                            </div>
-                                        
-                            <div class="opcionIndvidual">
-                                <label for="opcion4" class="tipo">Tours</label>
-                                <input class="inputCheck" type="checkbox" name="checkboxTipo" id="opcion4">
-                            </div>
-                                        
-                            <div class="opcionIndvidual">
-                                <label for="opcion5" class="tipo">Todo Incluido</label>
-                                <input class="inputCheck" type="checkbox" name="checkboxTipo" id="opcion5">
-                            </div>
-                                        
-                            <div class="opcionIndvidual">
-                                <label for="opcion6" class="tipo">Acceso Gratuito</label>
-                                <input class="inputCheck" type="checkbox" name="checkboxTipo" id="opcion6">
-                            </div>
-                                        
-                            <div class="opcionIndvidual">
-                                <label for="opcion7" class="tipo">Puntos Destacados</label>
-                                <input class="inputCheck" type="checkbox" name="checkboxTipo" id="opcion7">
-                            </div>
-                        </div>
-      
-                    </li>
                 </ul>
             </div>
             <h3 class="tituloResultado" style="color: whitesmoke">Resultados:</h3>
