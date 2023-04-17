@@ -1,19 +1,114 @@
 Ruinas de cartago
 Mirador cartago
-Casa Aquiares cartago
+Casa Aquiares cartago [
+    titulo: Casa Aquiares, 
+    provincia: cartago,
+    clima: calido,
+    topografia: montaña,
+    categoria: hotel,
+    descripcion: Casa Aquiares Lodge es una hermosa casa con 11 habitaciones totalmente equipada con wify, piscina, jardines, salón de lectura, comedor, cocina y fácil acceso a ríos , montañas, volcanes , monumentos y grandes aventuras y si buscas adrenalina o historia llegaste al lugar perfecto.,
+    pago aceptado: efectivo, sinpe Mobil, transferencias , 
+    direccion: Aquiares, Turrialba, Cartago, Costa Rica
+200m sur del polideportivo de Aquiares,
+    horario: 6am - 11pm
+    contacto: +(506) 60937446,
+    link: https://casaaquiareslodge.weebly.com/
+]
 
 Casa Selva Limon
-Tamara Limon 
 
 
-Teatro Nacional san jose
+Tamara Limon  [
+    titulo: Restaurante Tamara, 
+    provincia: Restaurante Tamara,
+    clima: calido,
+    topografia: playa,
+    categoria: restaurante,
+    descripcion: Restaurante de comidas caribeñas, Rice n Beans, pollo caribeño, rondon, camarones Támara, patty, panbon, plantintart. Opciones vegetarianas, Opciones veganas, Opciones sin gluten.,
+    pago aceptado: Tarjetas, efectivo, 
+    direccion:  Av. 71, Limón, Puerto Viejo de Talamanca, 70401, Costa Rica ,
+    horario: 11.30am - 11pm
+    contacto: +506 2750 0684,
+    link: https://www.tamarahotel.com/restaurante-tamara/
+    ]
 
-Restaurante Añoranzas heredia
 
-Parque Bosques de Fraijanes alajuela
+Teatro Nacional san jose [
+    titulo: Teatro Nacional, 
+    provincia: San Jose,
+    clima: fresco,
+    topografia: ciudad,
+    categoria: Punto Destacado,
+    descripcion:  El Teatro Nacional es un edificio de arquitectura historicista terminado en el año de 1897. Se le considera uno de los inmuebles más importantes de la historia nacional, y principal joya arquitectónica de la ciudad de San José. Su construcción guarda un profundo significado dado que representa la decisión del costarricense a la hora de emprender acción y de la estabilidad económica,
+    pago aceptado: Tarjeta Credit o debito, 
+    direccion: Plaza Juan Mora Fernández, Avenida 2 Libertador Juan Rafael Mora, Calles 3 y 5,
+    horario:  Lunes a domingo de 9:00 a 17:00 hrs,
+    contacto: +506 2010 1100,
+    link: https://www.teatronacional.go.cr/
+]
 
-Playa Mantas Puntarenas
+Restaurante Añoranzas heredia [
+    titulo: Hotel Riu Guanacaste, 
+    provincia: 
+    clima: 
+    topografia: 
+    categoria: ,
+    descripcion: ,
+    pago aceptado: , 
+    direccion: ,
+    horario: 
+    contacto: 
+]
 
-Hotel Riu Guanacaste 
+Parque Bosques de Fraijanes alajuela [
+    titulo: Parque Bosques de Fraijanes, 
+    provincia: alajuela,
+    clima: fresco,
+    topografia: Montaña,
+    categoria: Aire Libre,
+    descripcion: El Parque Laguna Fraijanes es un refugio natural muy acogedor, ubicado en la provincia de Alajuela a 1650 metros sobre el nivel del mar, en ruta hacia el Volcán Poás; por lo que sus visitantes pueden disfrutar de algunos momentos de sol, pero la mayor parte del tiempo, encontrarán un refugio natural con  especies de aves y una amplia variedad de flora, todo en medio de neblina, frío y por lo general, un clima húmedo. Este hermoso parque se comenzó a construir en el año 1982 y cuenta con una extensión de 24 manzanas, donde su principal atractivo es un lago en el que, si los niveles del agua lo permiten, se puede pescar;  además de sus agradables senderos, zonas verdes y cabañas con vistas al lago, dos de ellas rústicas tipo chalet.  ,
+    pago aceptado: efectivo, Tarjeta Credito o Debito , 
+    direccion: ,
+    horario:  De martes a domingo, de 8:00 am a 3:00 pm,
+    contacto:  +506 24822166
+]
 
-Playa Penca Guanacaste
+Playa Mantas Puntarenas [
+    titulo: Hotel Riu Guanacaste, 
+    provincia: 
+    clima: 
+    topografia: 
+    categoria: ,
+    descripcion: ,
+    pago aceptado: , 
+    direccion: ,
+    horario: 
+    contacto: 
+]
+
+Hotel Riu Guanacaste [
+    titulo: Hotel Riu Guanacaste, 
+    provincia: 
+    clima: 
+    topografia: 
+    categoria: ,
+    descripcion: ,
+    pago aceptado: , 
+    direccion: ,
+    horario: 
+    contacto: 
+]
+
+Playa Penca Guanacaste [
+    id: 
+    titulo: 
+    provincia: 
+    clima: 
+    topografia: 
+    categoria: ,
+    descripcion: ,
+    pago aceptado: , 
+    direccion: ,
+    horario: 
+    contacto: 
+]

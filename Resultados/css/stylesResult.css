@@ -1,0 +1,149 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dongle&family=Fugaz+One&family=Nunito&family=Roboto+Mono&display=swap');
+
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+input, button, textarea {
+    font: inherit;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    min-height: 100vh;
+    background-color: #e9c46a ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav {
+    min-height: 65px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    font-size: 1rem;
+    background-color: #264653;
+    color: #2a9d8f;
+    position: sticky;
+    top:0
+}
+
+.menu-barra {
+    width: 90vw;
+    list-style-type:none;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-end;
+    color: #ffbe0b;
+ 
+}
+
+.contenedorImg {
+    width: 90vw;
+    min-height: 350px;
+    background-color: #2a9d909f;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 20px;
+
+    }
+
+.contenedorImg img {
+    width: 95%;
+    
+    margin: 10px auto;
+    border: 2px solid gainsboro;
+    border-radius: 20px;
+
+}
+
+.contenedorImg h2 {
+    text-align: center;
+    font-weight:900;
+
+}
+
+.contenedorImg__categorias ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.contenedorImg__categorias li {
+    margin: 8px;
+    border-radius: 5px;
+    border: solid 1px gainsboro ;
+    display: block;
+    padding-left: 10px;
+    
+}
+
+.contenedorImg__categorias li:last-child {
+    margin-bottom: 20px;
+}
+.contenedorDes {
+    width: 90%;
+    margin: 10px 0;
+    padding: 5px;
+    border: solid 1px #264653 ;
+    border-radius: 10px;
+}
+
+.contenedorDes__h3{
+    padding: 5px;
+    text-decoration: underline ;
+}
+.contenedorInfo {
+    width: 90%;
+    margin: 10px 0;
+    padding: 5px;
+    border: solid 1px #264653 ;
+    border-radius: 10px;
+
+}
+.contenedorInfo p {
+    padding: 8px 0;
+}
+
+.contenedorInfo p:last-child {
+    text-align: center;
+    font-weight: bold;
+}
+footer {
+    position: sticky;
+    bottom: 0;
+    background-color: #264653;
+    width: 100vw;
+    color: #2a9d8f;
+    text-align: center;
+    font-size: 1.1rem;
+    
+}
+
+a, a:visited{
+    text-decoration: none;
+    color: #7c74c4;
+}
+
+a:hover, a:active {
+    color: #2a9d8f;
+}
